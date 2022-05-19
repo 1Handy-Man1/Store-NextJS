@@ -11,10 +11,14 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> replace with a card ico */}
       </Head>
 
+      <navbar>
+        <h1>hello</h1>
+      </navbar>
+
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Home stuff
-        </h1>
+        <div className={styles.containImg}>
+          <img src='https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701245671-1200x750.jpg'></img>
+        </div>
       </main>
 
       <footer className={styles.footer}>

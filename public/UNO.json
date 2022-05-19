@@ -1,4 +1,6 @@
 {
     "id": "UNO",
-    "name": "This game is the bomb."
+    "price": "$4.89",
+    "image": "https://i5.walmartimages.com/asr/8fcb252f-6369-4eb5-8513-5f8d67b6b0d0_1.448f37226c364e41e1a36d8c8313ebf7.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+    "desc": "UNO is a multi-player card game in which the objective is to be the first player to get rid of all the cards in their hand. Each player is dealt 7 cards and players take turn drawing cards from the deck."
 }
