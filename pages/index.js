@@ -17,7 +17,6 @@ export default function Home() {
       </navbar>
 
       <main className={styles.main}>
-
         <div className={styles.containImg}>
           <img src='https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701245671-1200x750.jpg' alt="Banner"></img>
         </div>
@@ -41,10 +40,7 @@ export default function Home() {
             <p id={styles.desc}>
             UNO is a multi-player card game in which the objective is to be the first player to get rid of all the cards in their hand. Each player is dealt 7 cards and players take turn drawing cards from the deck.
             </p>
-            <button className={styles.btn}>
-              {/* <Link></Link> Might use this if any issue with navigation */}
-              <a href="/Login">Buy</a>
-            </button>
+            <Link href="/Login"><button className={styles.btn}>Buy</button></Link>
           </div>
 
           <div className={styles.card}>
@@ -57,12 +53,9 @@ export default function Home() {
             <p id={styles.desc}>
             Gameplay revolves around three types of cards: Monster, Spell, and Trap cards. Monster cards are monsters used to attack and defend against the opposing player, mainly for the purpose of damaging an opponent's life points.
             </p>
-            <button className={styles.btn}>
-              <a href="/Login">Buy</a>
-            </button>
+            <Link href="/Login"><button className={styles.btn}>Buy</button></Link>
           </div>
         </div>
-
       </main>
 
       <footer className={styles.footer}>
