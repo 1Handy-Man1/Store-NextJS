@@ -19,6 +19,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 8rem;
+    min-width: 20rem;
 }
   
 .login:hover {
@@ -48,4 +49,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.submit {
+    border: solid 2px #e0dddd;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: white;
+    line-height: 1.5;
+    display: block;
+    margin: auto;
+}
+
+.submit:hover {
+    cursor: pointer;
 }

@@ -18,7 +18,7 @@ export default function Login() {
                 <input type='password' name='password' placeholder='Password' /* reqired */ ></input>
            </div>
            
-           <button type='submit'>Sign in</button>
+           <button type='submit' className={styles.submit}>Sign in</button>
 
            <div className={styles.links}>
                <p>Don't have an account? <Link href='/Register'>Register</Link></p>
