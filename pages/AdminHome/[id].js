@@ -1,16 +1,17 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 
-export default function AdminArray({cards}) {
+export default function AdminArray() {
     const router = useRouter()
     const {id} = router.query
+    const {name} = router.query
 
     return (<>
     <Head>
         <title>Shop List</title>
     </Head>
     <h1>list {id}</h1>
-    <p>{cards.name}</p>
+    <p>{name}</p>
     </>)
 }
 
