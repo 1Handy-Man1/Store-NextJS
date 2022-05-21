@@ -2,8 +2,30 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from "next/link";
 import styles from '../styles/Home.module.css'
+import style from '../styles/Navbar.module.css';
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  // const [toggleMenu, setToggleMenu] = useState(false);
+  // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  // const toggleNav = () => {
+  //     setToggleMenu(!toggleMenu)
+  // }
+
+  // useEffect(() => {
+  //     const changeWidth = () => {
+  //         setScreenWidth(window.innerWidth);
+  //     }
+      
+  //     window.addEventListener('resize', changeWidth)
+
+  //     return () => {
+  //         window.removeEventListener('resize', changeWidth)
+  //     }
+  // }, [])
+
+
   return (
     <div>
       <Head>
@@ -12,9 +34,29 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" /> replace with a card ico */}
       </Head>
 
-      <navbar>
-        <h1>hello</h1>
-      </navbar>
+      <nav className={style.nav}>
+        <img src='https://www.nicepng.com/png/detail/214-2146883_4-fake-stamp-vector-fake-news-logo-png.png' alt="Logo"></img>
+          {/* {(toggleMenu || screenWidth > 700) && ( */}
+            <ul>
+              <li>
+                <Link href="/">
+                  <p>Home</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/Login">
+                  <p>Login</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/Register">
+                  <p>Register</p>
+                </Link>
+              </li>
+            </ul>
+          {/* )} */}
+        <button /* onClick={toggleNav} */><i class="fa-solid fa-bars"></i></button>
+      </nav>
 
       <main className={styles.main}>
         <div className={styles.containImg}>
