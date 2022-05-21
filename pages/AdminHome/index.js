@@ -7,8 +7,6 @@ export default function Admin() {
     <Head>
         <title>Admin home</title>
     </Head>
-
-    
     
     <main className={styles.main}>
         <div className={styles.ViewList}>
