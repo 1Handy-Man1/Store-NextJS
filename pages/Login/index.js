@@ -7,6 +7,7 @@ export default function Login() {
     return (<>
     <Head>
         <title>Login</title>
+        <link rel="icon" href="/CardMaster.ico" />
     </Head>
     
     <main>

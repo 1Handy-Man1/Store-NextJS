@@ -7,6 +7,7 @@ export default function Register() {
     return (<>
     <Head>
         <title>Register</title>
+        <link rel="icon" href="/CardMaster.ico" />
     </Head>
     <main>
 

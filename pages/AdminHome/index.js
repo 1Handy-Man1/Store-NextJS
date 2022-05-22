@@ -6,6 +6,7 @@ export default function Admin() {
     return (<>
     <Head>
         <title>Admin home</title>
+        <link rel="icon" href="/CardMaster.ico" />
     </Head>
     
     <main className={styles.main}>
@@ -20,7 +21,7 @@ export default function Admin() {
             <p id={styles.desc}>
             UNO is a multi-player card game in which the objective is to be the first player to get rid of all the cards in their hand. Each player is dealt 7 cards and players take turn drawing cards from the deck.
             </p>
-            <Link href="/Login"><button className={styles.btn}>Buy</button></Link>
+            <Link href="/AdminHome/UNO"><button className={styles.btn}>Buy</button></Link>
           </div>
 
           <div className={styles.card}>
@@ -33,7 +34,7 @@ export default function Admin() {
             <p id={styles.desc}>
             Gameplay revolves around three types of cards: Monster, Spell, and Trap cards. Monster cards are monsters used to attack and defend against the opposing player, mainly for the purpose of damaging an opponent's life points.
             </p>
-            <Link href="/Login"><button className={styles.btn}>Buy</button></Link>
+            <Link href="/AdminHome/Yugioh"><button className={styles.btn}>Buy</button></Link>
           </div>
 
           <div className={styles.card}>
