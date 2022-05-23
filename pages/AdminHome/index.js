@@ -38,16 +38,16 @@ export default function Admin() {
           </div>
 
           <div className={styles.card}>
-            <div><img src="https://media.gamestop.com/i/gamestop/11161884/Yu-Gi-Oh-Trading-Card-Game-Maximum-Gold-El-Dorado-Booster-Full-Box?$pdp$" alt="name"></img></div>
+            <div><img src="https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/1280x1280/products/127921/126352/pokemon-xy-pikachu-ex-legendary-collection-box-pokemon-usa-pre-order-ships-november-4__17050.1461386804.jpg?c=2" alt="name"/></div>
             <hr></hr>
             <div>
-              <p>Yugioh</p>
-              <p>$29.99</p>
+              <p>Pokemon</p>
+              <p>$199.99</p>
             </div>
             <p id={styles.desc}>
-            Gameplay revolves around three types of cards: Monster, Spell, and Trap cards. Monster cards are monsters used to attack and defend against the opposing player, mainly for the purpose of damaging an opponent's life points.
+              The original Pokémon is a role-playing game based around building a small team of monsters to battle other monsters in a quest to become the best. Pokémon are divided into types, such as water and fire, each with different strengths. Battles between them can be likened to the simple hand game rock-paper-scissors.
             </p>
-            <Link href="/Login"><button className={styles.btn}>Buy</button></Link>
+            <Link href="/AdminHome/Pokemon"><button className={styles.btn}>Buy</button></Link>
           </div>
         </div>
     </main>

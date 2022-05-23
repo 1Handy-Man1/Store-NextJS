@@ -2,5 +2,8 @@
     "id": "Yugioh",
     "price": "$29.99",
     "image": "https://media.gamestop.com/i/gamestop/11161884/Yu-Gi-Oh-Trading-Card-Game-Maximum-Gold-El-Dorado-Booster-Full-Box?$pdp$",
-    "desc": "Gameplay revolves around three types of cards: Monster, Spell, and Trap cards. Monster cards are monsters used to attack and defend against the opposing player, mainly for the purpose of damaging an opponent's life points."
+    "desc": "Gameplay revolves around three types of cards: Monster, Spell, and Trap cards. Monster cards are monsters used to attack and defend against the opposing player, mainly for the purpose of damaging an opponent's life points.",
+    "history": "Yu-Gi-Oh! was created by Japanese manga author-illustrator Kazuki Takahashi and began appearing as a regular feature in the magazine Shonen Jump in 1996.",
+    "image2": "https://m.media-amazon.com/images/M/MV5BYTU2Zjg0OWEtYjNiYi00ZjZhLWFlMWMtYTlhOTkxOGRhMTc1XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_.jpg",
+    "rule": "Each match in YuGiOh consists of 3 duels in a best-of-3 format. During a duel, each player starts with 8000 Life Points and a winner is declared in one of the following ways: Reduce your opponent's Life Points to 0. If and when it is time to draw a card, your opponent is unable to do so."
 }

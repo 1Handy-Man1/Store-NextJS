@@ -97,7 +97,7 @@
     border: solid 3px #e0dddd;
     border-radius: 25px;
     line-height: 1.5;
-    min-width: 5rem;
+    min-width: 6rem;
 }
 
 @media screen and (max-width: 700px) {
