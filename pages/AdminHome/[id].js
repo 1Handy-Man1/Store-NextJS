@@ -5,11 +5,6 @@ import styles from '../../styles/arrayID.module.css';
 export default function AdminArray({cards}) {
     const router = useRouter()
     const {id} = router.query
-    // const {price} = router.query
-    // const {desc} = router.query
-    // const {history} = router.query
-    // const {image} = router.query
-    // const {image2} = router.query
 
     return (<>
     <Head>
@@ -19,7 +14,7 @@ export default function AdminArray({cards}) {
 
     <main className={styles.main}>
         <div className={styles.info}>
-            <img src={cards.image2} alt='person' className={styles.imgPerson} />
+            <img src={cards.image2} alt='person' className='h-auto sm:h-60 w-full object-cover md:h-96 md:w-1/2 rounded-xl mr-10' />
             <div>
                 <h1>History</h1>
                 <hr></hr>

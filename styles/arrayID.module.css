@@ -43,15 +43,7 @@
 }
 
 .info div p {
-    font-size: 1.25vw;
-}
-
-.imgPerson {
-    width: 100%;
-    height: auto;
-    margin-right: 2rem;
-    object-fit:cover;
-    border-radius: 10px;
+    font-size: 1.45vw;
 }
 
 .img {
@@ -115,7 +107,7 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
     .info {
         flex-direction: column;
     }
@@ -126,5 +118,9 @@
     }
     .card {
         width: 80%;
+    }
+    .info div p {
+        margin-top: 1rem;
+        font-size: 1.1rem;
     }
 }
