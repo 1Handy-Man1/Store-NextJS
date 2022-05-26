@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from "next/link";
 import styles from '../styles/Home.module.css';
 import { useUser } from '@auth0/nextjs-auth0';
+import Image  from 'next/image';
 
 export default function Home() {
   const {user, error, isLoading} = useUser();
@@ -23,7 +24,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.containImg}>
-          <img src='https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701245671-1200x750.jpg' alt="Banner"></img>
+          <Image src='https://res.cloudinary.com/duitylslf/image/upload/v1653522180/High_resolution_wallpaper_background_ID_77701245671-1200x750_cf9ckc.jpg' alt="Banner" width='1540' height='800' z-index='2' />
         </div>
 
         <div>
@@ -36,7 +37,7 @@ export default function Home() {
 
         <div className={styles.ViewList}>
           <div className={styles.card}>
-            <img src="https://i5.walmartimages.com/asr/8fcb252f-6369-4eb5-8513-5f8d67b6b0d0_1.448f37226c364e41e1a36d8c8313ebf7.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="name"></img>
+          <Image src="https://res.cloudinary.com/duitylslf/image/upload/v1653518977/8fcb252f-6369-4eb5-8513-5f8d67b6b0d0_1.448f37226c364e41e1a36d8c8313ebf7_wkg8sw.jpg" alt="name" width='700' height='700' />
             <hr></hr>
             <div>
               <p>UNO</p>
@@ -49,7 +50,7 @@ export default function Home() {
           </div>
 
           <div className={styles.card}>
-            <img src="https://media.gamestop.com/i/gamestop/11161884/Yu-Gi-Oh-Trading-Card-Game-Maximum-Gold-El-Dorado-Booster-Full-Box?$pdp$" alt="name"></img>
+          <Image src="https://res.cloudinary.com/duitylslf/image/upload/v1653518993/Yu-Gi-Oh-Trading-Card-Game-Maximum-Gold-El-Dorado-Booster-Full-Box_xe9tpb.jpg" alt="name" width='700' height='700' />
             <hr></hr>
             <div>
               <p>Yugioh</p>
@@ -80,7 +81,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.containImg}>
-          <img src='https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701245671-1200x750.jpg' alt="Banner"></img>
+        <Image src='https://res.cloudinary.com/duitylslf/image/upload/v1653522180/High_resolution_wallpaper_background_ID_77701245671-1200x750_cf9ckc.jpg' alt="Banner" width='1540' height='800' />
         </div>
 
         <div>
@@ -93,7 +94,7 @@ export default function Home() {
 
         <div className={styles.ViewList}>
           <div className={styles.card}>
-            <img src="https://i5.walmartimages.com/asr/8fcb252f-6369-4eb5-8513-5f8d67b6b0d0_1.448f37226c364e41e1a36d8c8313ebf7.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="name"></img>
+          <Image src="https://res.cloudinary.com/duitylslf/image/upload/v1653518977/8fcb252f-6369-4eb5-8513-5f8d67b6b0d0_1.448f37226c364e41e1a36d8c8313ebf7_wkg8sw.jpg" alt="name" width='700' height='700' />
             <hr></hr>
             <div>
               <p>UNO</p>
@@ -106,7 +107,7 @@ export default function Home() {
           </div>
 
           <div className={styles.card}>
-            <img src="https://media.gamestop.com/i/gamestop/11161884/Yu-Gi-Oh-Trading-Card-Game-Maximum-Gold-El-Dorado-Booster-Full-Box?$pdp$" alt="name"></img>
+            <Image src="https://res.cloudinary.com/duitylslf/image/upload/v1653518993/Yu-Gi-Oh-Trading-Card-Game-Maximum-Gold-El-Dorado-Booster-Full-Box_xe9tpb.jpg" alt="name" width='700' height='700' />
             <hr></hr>
             <div>
               <p>Yugioh</p>

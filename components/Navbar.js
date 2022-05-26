@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { useUser } from '@auth0/nextjs-auth0';
+import { Link } from 'react-scroll';
+import Image  from 'next/image';
 
 function NavLink({to, children}) {
-    return <a href={to} className={`mx-4`}>
+    return <Link href={to} className={`mx-4`}>
         {children}
-    </a>
+    </Link>
 }
 
 /* 
@@ -20,15 +22,15 @@ function MobileNav({open, setOpen}) {
         return <>
         <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
-                <a className="text-3xl font-semibold" href="/"><img className='h-20 w-full object-cover md:h-full md:w-20' src='https://d1nhio0ox7pgb.cloudfront.net/_img/i_collection_png/512x512/plain/playing_cards.png'></img></a>
+                <Link className="text-3xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' /></Link>
             </div>
             <div className="flex flex-col ml-4 text-center">
-                <a className="text-2xl font-medium my-4" href="/AdminHome" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                <Link className="text-2xl font-medium my-4" href="/AdminHome" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Store
-                </a>
-                <a className="text-2xl font-normal my-4" href="/api/auth/logout" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                </Link>
+                <Link className="text-2xl font-normal my-4" href="/api/auth/logout" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Logout
-                </a>
+                </Link>
             </div>  
         </div>
         </>
@@ -36,15 +38,15 @@ function MobileNav({open, setOpen}) {
     return (
         <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
-                <a className="text-3xl font-semibold" href="/"><img className='h-20 w-full object-cover md:h-full md:w-20' src='https://d1nhio0ox7pgb.cloudfront.net/_img/i_collection_png/512x512/plain/playing_cards.png'></img></a>
+                <Link className="text-3xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' /></Link>
             </div>
             <div className="flex flex-col ml-4 text-center">
-                <a className="text-2xl font-medium my-4" href="/AdminHome" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                <Link className="text-2xl font-medium my-4" href="/AdminHome" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Store
-                </a>
-                <a className="text-2xl font-normal my-4" href="/api/auth/login" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
+                </Link>
+                <Link className="text-2xl font-normal my-4" href="/api/auth/login" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Login
-                </a>
+                </Link>
             </div>  
         </div>
     )
@@ -65,10 +67,10 @@ export default function Navbar() {
     // THIS WILL SHOW UP IF YOU HAVE SIGN IN
     if(user){
         return <>
-            <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center fixed w-full top-0">
+            <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center fixed w-full top-0 z-0">
                 <MobileNav open={open} setOpen={setOpen}/>
                 <div className="w-3/12 flex items-center">
-                    <a className="text-4xl font-semibold" href="/"><img className='h-20 w-full object-cover md:h-full md:w-20' src='https://d1nhio0ox7pgb.cloudfront.net/_img/i_collection_png/512x512/plain/playing_cards.png'></img></a>
+                    <Link className="text-4xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' /></Link>
                 </div>
                 <div className="w-9/12 flex justify-end items-center">
     
@@ -100,7 +102,7 @@ export default function Navbar() {
             <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center fixed w-full top-0">
                 <MobileNav open={open} setOpen={setOpen}/>
                 <div className="w-3/12 flex items-center">
-                    <a className="text-4xl font-semibold" href="/"><img className='h-20 w-full object-cover md:h-full md:w-20' src='https://d1nhio0ox7pgb.cloudfront.net/_img/i_collection_png/512x512/plain/playing_cards.png'></img></a>
+                    <Link className="text-4xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' /></Link>
                 </div>
                 <div className="w-9/12 flex justify-end items-center">
     
