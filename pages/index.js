@@ -57,7 +57,7 @@ export default function Home() {
               <p>$29.99</p>
             </div>
             <p id={styles.desc}>
-            Gameplay revolves around three types of cards: Monster, Spell, and Trap cards. Monster cards are monsters used to attack and defend against the opposing player, mainly for the purpose of damaging an opponent's life points.
+            Gameplay revolves around three types of cards: Monster, Spell, and Trap cards. Monster cards are monsters used to attack and defend against the opposing player, mainly for the purpose of damaging an opponent is life points.
             </p>
             <Link href="/Login"><button className={styles.btn}>Buy</button></Link>
           </div>
@@ -114,7 +114,7 @@ export default function Home() {
               <p>$29.99</p>
             </div>
             <p id={styles.desc}>
-            Gameplay revolves around three types of cards: Monster, Spell, and Trap cards. Monster cards are monsters used to attack and defend against the opposing player, mainly for the purpose of damaging an opponent's life points.
+            Gameplay revolves around three types of cards: Monster, Spell, and Trap cards. Monster cards are monsters used to attack and defend against the opposing player, mainly for the purpose of damaging an opponent is life points.
             </p>
             <Link href="/AdminHome"><button className={styles.btn}>Buy</button></Link>
           </div>

@@ -22,7 +22,7 @@ function MobileNav({open, setOpen}) {
         return <>
         <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
-                <Link className="text-3xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' /></Link>
+                <Link className="text-3xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' alt='icon' /></Link>
             </div>
             <div className="flex flex-col ml-4 text-center">
                 <Link className="text-2xl font-medium my-4" href="/AdminHome" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
@@ -38,7 +38,7 @@ function MobileNav({open, setOpen}) {
     return (
         <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
-                <Link className="text-3xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' /></Link>
+                <Link className="text-3xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' alt='icon' /></Link>
             </div>
             <div className="flex flex-col ml-4 text-center">
                 <Link className="text-2xl font-medium my-4" href="/AdminHome" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
@@ -70,7 +70,7 @@ export default function Navbar() {
             <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center fixed w-full top-0 z-0">
                 <MobileNav open={open} setOpen={setOpen}/>
                 <div className="w-3/12 flex items-center">
-                    <Link className="text-4xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' /></Link>
+                    <Link className="text-4xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' alt='icon' /></Link>
                 </div>
                 <div className="w-9/12 flex justify-end items-center">
     
@@ -102,7 +102,7 @@ export default function Navbar() {
             <nav className="flex filter drop-shadow-md bg-white px-4 py-4 h-20 items-center fixed w-full top-0">
                 <MobileNav open={open} setOpen={setOpen}/>
                 <div className="w-3/12 flex items-center">
-                    <Link className="text-4xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' /></Link>
+                    <Link className="text-4xl font-semibold" href="/"><Image className='h-20 w-full object-cover md:h-full md:w-20' src='https://res.cloudinary.com/duitylslf/image/upload/v1653524076/playing_cards_ebgvcw.png' width='90' height='90' alt='icon' /></Link>
                 </div>
                 <div className="w-9/12 flex justify-end items-center">
     
